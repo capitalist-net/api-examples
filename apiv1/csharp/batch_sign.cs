@@ -66,7 +66,7 @@ static class ApiClient
     };
 
     /// <summary>
-    /// Sends a hash (dictionary) of data via HTTP POST to https://beta.volan.dev/api/post
+    /// Sends a hash (dictionary) of data via HTTP POST to https://api.capitalist.net
     /// Adds header: x-response-type: json
     /// Content-Type can be application/x-www-form-urlencoded (default) or multipart/form-data when useMultipart=true
     /// </summary>
