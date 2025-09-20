@@ -14,7 +14,7 @@ var batchBody = "BRBANK;06971135800;PIX;John Smith;j.smith@example.com;1.00;9999
 
 try
 {
-    // get_token is required before import_batch in case of password encryption
+    // get_token is required before import_batch_advanced in case of password encryption
     var resultToken = await get_token(BasicConfig.Login);
     Console.WriteLine("Response:\n" + resultToken);
 
@@ -38,7 +38,7 @@ static async Task<string> importBatch(string batchBody, string pemPrivateKeyPem)
 
     var data = new Dictionary<string, string>
     {
-        ["operation"] = "import_batch",
+        ["operation"] = "import_batch_advanced",
         ["login"] = BasicConfig.Login,
         ["token"] = AuthState.Token,
         ["batch"] = batchBody,
