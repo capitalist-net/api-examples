@@ -12,7 +12,7 @@ var pemKey = "-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQCW8dxhuYKAgwfwlNqSi
 // Send a POST request using a hardcoded hash (dictionary), not command-line arguments.
 var data = new Dictionary<string, string>
 {
-    ["operation"] = "import_batch",
+    ["operation"] = "import_batch_advanced",
     ["login"] = "myloginname",
     ["plain_password"] = "myplainpassword",
     ["batch"] = batchBody,
